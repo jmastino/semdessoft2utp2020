@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"pktJordyMastino","l":"CalcularSalarios"},{"p":"pktJordyMastino","l":"CaracteristicaNumeros"},{"p":"pktJordyMastino","l":"Desarrollodemetodos"}]
