@@ -1,4 +1,5 @@
 package pktJordyMastino;
+
 /**
  * Esta es la clase para procesar numeros o cadenas segun se pida en la clase de Desarrollo de software II
  *<br>Universidad Tecnológica de Panamá
@@ -12,6 +13,7 @@ package pktJordyMastino;
 
 public class CaracteristicaNumeros {
 	//mtd suma divisores por reutilizar codigo
+	
 	/**Metodo para verificar si un numero entero es primo.
      * @param num  el numero a verificar por este método.
      * @return retorna S si es número primo N si no es un número primo.
@@ -35,6 +37,7 @@ public class CaracteristicaNumeros {
 	                return 'S';
 	         }		         
 	}
+	
 	/** Metodo para calcular si el numero entero es perfecto
 	 * 
 	 * @param num el numero a verificar por este metodo.
@@ -60,6 +63,7 @@ public class CaracteristicaNumeros {
 		else
 			return 'N';
 	}
+	
 	/**
 	 * Metodo para devolver la cantidad de cifras de un numero.
 	 * @param num el numero a verificar por este Metodo.
@@ -74,6 +78,7 @@ public class CaracteristicaNumeros {
 		}
 		return cifras;
 	}
+	
 	/**
 	 * Metodo para verificar si un numero es par o Impar.
 	 * @param num el numero int a verificar por este metodo.
@@ -119,6 +124,7 @@ public class CaracteristicaNumeros {
         }
         return inverso;
     }
+	
 	/**Metodo invertir el numero float.
 	 * @param num el numero introducido tipo {@code Float} para ser procesado.
 	 * @return devuelve procesado este número de manera invertida.
@@ -148,6 +154,7 @@ public class CaracteristicaNumeros {
         }
         return inverso;
     }
+	
 	/**
 	 * Metodo para verificar si el numero introducido es un numero abundante.
 	 * @param num el numero a verificar por este metodo.
@@ -173,6 +180,7 @@ public class CaracteristicaNumeros {
 	    }
 	    
 	}
+	
 	/**
 	 * Metodo para verificar si dos numero enteros son numeros amigos.
 	 * @param num1 el primer numero a ser procesado para verificar si es numero amigo.
@@ -205,6 +213,7 @@ public class CaracteristicaNumeros {
 			return false;
 		}
 	}
+	
 	/**
 	 * Metodo para verificar si el numero entero introducido es Armstrong.
 	 * @param num el numero a verificar por este metodo.
@@ -224,6 +233,7 @@ public class CaracteristicaNumeros {
 		    else  
 		    {return 'N';}
 	}
+	
 	/**
 	 * Metodo para imprimir la sucesion ulam de numero al haber introducido un numero entero.
 	 * @param num el número a procesar por este metodo.
@@ -254,6 +264,7 @@ public class CaracteristicaNumeros {
         }
 		
 	}
+	
 	/**
 	 * Metodo para retornar si la cadena introducida en el metodo luego de ser procesada es una cadena tipo palindrome
 	 * <br> WARNING !!: No procesa palindromes con espacios en blanco o por teclado. 
@@ -272,6 +283,7 @@ public class CaracteristicaNumeros {
 			return 'N';
 		}
 	}
+	
 	/**
 	 * metodo para verificar si un numero tipo {@code Long} es un numero capicua
 	 * @param num el numero a verificar {@code Long} por este metodo.
@@ -290,7 +302,11 @@ public class CaracteristicaNumeros {
 			return 'N';
 		}
 	}
-	//HACER EL COMENTARIO DE JAVADOC PARA ESTE METODO
+	/**
+	 * verifica si el numero introducido es un número feliz.
+	 * @param num el numero a verficar por este metodo
+	 * @return 'S' si es numero feliz 'N' en caso contrario.
+	 */
 	public char mtdfeliz(int num)
 	{	boolean d=false;
 		int k=0,sum,g,s;

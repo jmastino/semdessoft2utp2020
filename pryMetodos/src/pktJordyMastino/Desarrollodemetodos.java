@@ -108,7 +108,7 @@ public class Desarrollodemetodos
 				SalN=cs.salario(horas, pagoHora, ce);
 				SalT=SalN+bon;
 				float invertido=0;
-				invertido=llam.mtdinvertir((int)SalT);
+				invertido=llam.mtdinvertir((int)SalT); //detalle la profesora pidio truncamiento
 				if(invertido>SalT)
 				{
 					SalR=invertido;
