@@ -12,7 +12,6 @@ public class Desarrollodemetodos
 	//------ESPACIO METODO-------ESPACIO METODO-----------------
 	public int mtdnumi()  
 	{ int num=0;
-	//Scanner sc = new Scanner(System.in);
 	System.out.println("Introduzca el valor:");	
 	num=sc.nextInt();
 	return num;
@@ -20,7 +19,6 @@ public class Desarrollodemetodos
 	//------ESPACIO METODO-------ESPACIO METODO-----------------
 	public float mtdnumf()
 	{float num=0;
-	//Scanner sc = new Scanner(System.in);
 	System.out.println("Introduzca el valor:");
 	num=sc.nextFloat();
 	return num;
