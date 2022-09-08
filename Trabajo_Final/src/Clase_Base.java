@@ -20,10 +20,10 @@ public class Clase_Base {
     	float pventa1 = 0.00f;
     	float pventa2 = 0.00f;
     	float pventa3 = 0.00f;	
-    	JOptionPane.showMessageDialog(null, "GENERADORES ESPECIALIZADOS, S.A.\nBienvenido\nUsted Introducira datos para generar un informe y definir costes de almacen para iniciar distribución\nESTE INFORME COMPONE 12 REGISTROS");
+    	JOptionPane.showMessageDialog(null, "GENERADORES ESPECIALIZADOS, S.A.\nBienvenido\nUsted Introducira datos para generar un informe y definir costes de almacen para iniciar distribuciï¿½n\nESTE INFORME COMPONE 12 REGISTROS");
     	
         codigo = JOptionPane.showInputDialog(null, "Ingrese el codigo");
-        descripcion = JOptionPane.showInputDialog(null, "Ingrese la descripción");
+        descripcion = JOptionPane.showInputDialog(null, "Ingrese la descripciï¿½n");
         costoDeFabrica = Float.parseFloat(JOptionPane.showInputDialog(null, "Ingrese el costo De Fabrica: ")) ;
         cantidad = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese la cantidad: ")) ;
         costoEnAlmacen = costoDeFabrica*1.05f;
@@ -273,14 +273,14 @@ public class Clase_Base {
 	public void mostrargui()
 	{	SimpleDateFormat formatter= new SimpleDateFormat("dd-MM-yyyy 'Hora:' HH:mm:ss");
 	Date date = new Date(System.currentTimeMillis());
-	String ax= "\t\t\t\tUNIVERSIDAD TECNOLÓGICA DE PANAMÁ\n\t\t\t\tCENTRO REGIONAL DE CHIRIQUÍ";
+	String ax= "\t\t\t\tUNIVERSIDAD TECNOLï¿½GICA DE PANAMï¿½\n\t\t\t\tCENTRO REGIONAL DE CHIRIQUï¿½";
 	ax+="\n\t\t\t\tFACULTAD DE INGENIERIA DE SISTEMAS COMPUTACIONALES";
 	ax+="\n\t\t\t\tREPORTE DE COSTOS Y PRECIOS DE VENTA";
 	ax+="\n\t\t\t\t\t\t\t\t\t\t\tFecha:"+(formatter.format(date));
 	ax+="\nESTUDIANTE: JORDY MASTINO\t\t\t\t\t"+"PROFESOR: CECILIA G,DE BEITIA";
-	ax+="\nCÉDULA: 4-781-1309\t\t\t\t\t\t"+"SEGUNDO SEMESTRE 2020";
+	ax+="\nCï¿½DULA: 0-000-0000\t\t\t\t\t\t"+"SEGUNDO SEMESTRE 2020";
 	ax+="\nCARRERA: LIC. EN DESARROLLO DE SOFTWARE\t\t\t\t"+"GRUPO: 2LS212";
-	ax+="\n\n\tCÓDIGO\t\tDESCRIPCION\t\t\tCOSTODEFABRICA\tCANTIDAD\tCOSTOENALMACEN\tPRECIOVTA1\tPRECIOVTA2\tPRECIOVTA3\n";
+	ax+="\n\n\tCï¿½DIGO\t\tDESCRIPCION\t\t\tCOSTODEFABRICA\tCANTIDAD\tCOSTOENALMACEN\tPRECIOVTA1\tPRECIOVTA2\tPRECIOVTA3\n";
 	JTextArea salida = new JTextArea();
 	salida.setText(ax);
 	
@@ -304,7 +304,7 @@ salida.append("\n\t\t\tCOSTO TOTAL EN ALMACEN: \t\t\t\t\t"+String.format("%.2f",
 	public static void main(String[] args) 
 	{
 		Clase_Base here = new Clase_Base();
-		//here.ingresar(); //llenado con joptionpane 12 casillas hasta su tamaño dinamico
+		//here.ingresar(); //llenado con joptionpane 12 casillas hasta su tamaï¿½o dinamico
 		here.rellenoautomatico(); //llenado automatico
 		here.calctotales(); //calculado de totales de la tabla
 		here.mostrargui();
